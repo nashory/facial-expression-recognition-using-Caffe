@@ -1,0 +1,15 @@
+net: "/home/shinmc/caffe/workspace/facial_expression/3_Pretrain/fer2013/model/Tang/model/train_val.prototxt"
+test_iter: 359
+# record every 0.5 epoch
+test_interval: 56
+base_lr: 0.004
+lr_policy: "step"
+gamma: 0.5
+stepsize: 40000
+display: 1
+max_iter: 120000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 1000
+snapshot_prefix: "/home/shinmc/caffe/workspace/facial_expression/3_Pretrain/fer2013/model/Tang/result/fer2013_Tang"
+solver_mode: GPU
